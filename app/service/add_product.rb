@@ -1,0 +1,5 @@
+class AddProduct  < ApplicationController
+
+ 
+
+end
