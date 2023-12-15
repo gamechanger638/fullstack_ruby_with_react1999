@@ -6,7 +6,7 @@ module BxBlockDoctor
         def create
           @doctor = BxBlockDoctor::Doctor.new(doctor_params)
            if @doctor.save
-             render json: {message: "doctor created successfully."}, status: 200
+             render json: {message: "doctor created successfully."}, status: 201
            else
              render json: {error: @doctor.errors.full_messages }, status: 422
            end
@@ -19,7 +19,6 @@ module BxBlockDoctor
 
         def update
             if @doctor
-                byebug
               if @doctor.update(doctor_params)
                 render json: { message: 'Doctor updated successfully.' }, status: 200
               else
