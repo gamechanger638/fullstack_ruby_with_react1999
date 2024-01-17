@@ -79,3 +79,6 @@ gem 'active_model_serializers'
 
 
 gem "jsonapi-serializer", "~> 2.2"
+
+gem 'rack-cors', require: 'rack/cors'
+

@@ -72,7 +72,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_29_173156) do
     t.string "description"
     t.integer "quantity"
     t.integer "price"
-    t.integer "user_id",   null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_products_on_user_id"
@@ -90,6 +90,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_29_173156) do
     t.string "username"
     t.string "email"
     t.string "password_digest"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "mothergotra"
+    t.string "fathergotra"
+    t.string "education"
+    t.string "mother_name"
+    t.string "father_name"
+    t.string "city"
+    t.string "looking_for"
+    t.datetime "dob"
+    t.string "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

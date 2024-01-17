@@ -10,6 +10,7 @@ import Catalog from './Catalog';
 import Product from './Product';
 import User from './User';
 import Signup from './Signup';
+import Head from './Head';
 
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
@@ -27,8 +28,8 @@ const Welcome = () => {
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path ="/product" element={<Product/>}/>
-        <Route path ="/catalog" element={<Catalog/>}/>
-        <Route path ="/user" element={<User/>}/> 
+        <Route path ="/catalog" element={<Catalog/>}/> 
+        <Route path ="/shadi" element={<Head/>}/> 
 
 
       </Routes>
